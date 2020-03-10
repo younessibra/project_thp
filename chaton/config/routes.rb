@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root "items#index"
   resources :items
   post '/carts/:id', to: 'carts#update'
-
   resources :carts
   devise_for :users
 
