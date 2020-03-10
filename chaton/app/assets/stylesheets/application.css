@@ -5,6 +5,7 @@
   margin-left: 950px;
   color: white;
 }
+/*------------------------------------------------------------------------*/
                   /* Titre page de connexion */
 
 .connecttitle {
@@ -12,9 +13,8 @@
   margin-top: 50px;
   margin-right: 50px;
   text-align: center;
-  
-  
-}                  
+  letter-spacing: 0.1em;
+}
                   /* Formulaire de connexion placement */
 .connexion.form {
   
@@ -32,10 +32,17 @@
   width: 250px;
   border-radius: 0.3em;
   }
+
+.connectform:focus {
+  outline: none;
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+}  
                 /* Boutton du formulaire de connection */
 .connectbutton {
   width: auto;
   border-radius: 0.3em;
+  
 }
                 /* lien du formulaire de connection */
 .connectliens {
@@ -43,6 +50,30 @@
 }
                 /* Video background */
 .sectionvideo {
+  width: 100%;
+  opacity: 0.80;
+}
+                /* Liens mot de passe oublié */
+.connectlink1 {
+  margin-left: 20px;
+  color:black;
+}
+
+.connectlink1:hover {
+    text-decoration: none;
+}
+                /* Lien s'inscrire */
+.connectlink2 {
+  margin-left: 170px;
+  color:black;
+}
+
+.connectlink2:hover {
+  text-decoration: none;
+}
+/*------------------PAGE d'inscription----------------------------------*/
+
+.sectionvideo2 {
   width: 100%;
   opacity: 0.80;
 }
