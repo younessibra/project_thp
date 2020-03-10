@@ -23,13 +23,20 @@
     <li class="nav-item">
       <a class="nav-link" href="accueil.html">Accueil</a>
     </li>
-    <li class="nav-item dropdown">
+    <% if user_signed_in? %>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/sign_out">Se déconnecter</a>
+    </li>
+      <% else %>
+      <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Connexion
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="/users/sign_in">Se connecter</a>
         <a class="dropdown-item" href="/users/sign_up">S'enregistrer</a>
+      <% end %>
+
       </div>
     </li>
     <li class="panier nav-item">
