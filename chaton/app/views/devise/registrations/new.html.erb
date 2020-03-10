@@ -1,29 +1,33 @@
-<h2>Sign up</h2>
+<div class="registbackground">
+  <%= video_tag( 'chatons2.mp4', class: 'sectionvideo', autoplay: true, loop: true, muted: true )%>
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
+<div class="connexion form">
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <h1 class="connecttitle">Inscription</h1>
+    <%= f.label :email,"Votre email" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"connectform" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password,"Mot de passe" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %> caractères minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"connectform" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <%= f.label :password_confirmation,"Confirmer mot de passe" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"connectform" %>
+  </div><br>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+    <%= f.submit "S'inscrire", class:"connectbutton" %>
+    <%= link_to "Connexion", session_path(resource_name), class:"connectlink1" %> 
+    </div>
 <% end %>
-
+</div>
 <%= render "devise/shared/links" %>
