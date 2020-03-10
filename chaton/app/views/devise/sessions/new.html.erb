@@ -1,26 +1,50 @@
-<h2>Log in</h2>
+<div class="connectbackground">
+  <%= video_tag( 'chatons.mp4', class: 'sectionvideo', autoplay: true, loop: true, muted: true )%>
+</div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+ <div class="connexion form">
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <h1 class="connecttitle">Se connecter</h1>
+    <%= f.label :email,"Votre email" %><br/>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"connectform" %>
+    
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.label :password, "Votre mot de passe" %><br />
+    <%= f.password_field :password, autocomplete: "current-password", class:"connectform" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :remember_me, "Se souvenir de moi" %>
+
     </div>
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Se connecter", class:"connectbutton" %>
   </div>
+
 <% end %>
+</div>
+</div>
 
 <%= render "devise/shared/links" %>
+
+<%#
+<form class="connexion form">
+    <div class="form-group">
+      <label for="exampleInputEmail1"></label>
+      <input type="email" class="form-control1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ton mail">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1"></label>
+      <input type="password" class="form-control2" id="exampleInputPassword1" placeholder="Mot de passe">
+    </div>
+    <button type="submit" class="btn btn-primary">Me connecter</button>
+  </form> %>
+
