@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Item.destroy_all
+
 20.times do |i|
   price = i + 0.99
   Item.create(title: "Chat#{i}", description: 'chat', price: price, image_url: 'test')
