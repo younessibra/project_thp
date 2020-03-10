@@ -1,0 +1,22 @@
+<h1>Items#index</h1>
+
+<main role="main">
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <% @items.each do |item| %>
+          <div class="card" style="width: 18rem;">  
+              <img class="card-img-top" src="<%=item.image_url%>" alt="Card image cap">
+          
+          <div class="card-body">
+              <h5 class="card-title"><%=item.title%></h5>
+              <p class="card-text"><%=item.description%></p>
+          </div>  
+          <div class="card-body">
+              <a href="#" class="card-link"><%=item.price%></a>    
+          </div> 
+          </div>    
+        <%end%>
+  </div>
+    </div>
+</main>
