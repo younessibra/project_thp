@@ -39,9 +39,11 @@
 
       </div>
     </li>
+   <% if user_signed_in? %>
     <li class="panier nav-item">
-      <a class="btn btn-success" href="#" role="button">Mon panier</a>
+      <a class="btn btn-success" href="/carts/:id" role="button">Mon panier</a>
     </li>
+    <%end%>
   </ul>
 </div>
 </nav>
