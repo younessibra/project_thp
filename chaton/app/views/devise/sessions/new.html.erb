@@ -5,7 +5,7 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
  <div class="connexion form">
   <div class="field">
-    <h1 class="animation infinite bounce delay-2s connecttitle">Connexion</h1>
+    <h1 class="connecttitle animated fadeInDown">Connexion</h1>
     <%= f.label :email,"Votre email" %><br/>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"connectform" %>
     
