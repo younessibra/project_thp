@@ -1,4 +1,7 @@
+
 /* Navbar Boutton */
+
+
 .panier a{
   
   margin-top: auto;
@@ -17,6 +20,11 @@
   margin-right: 50px;
   text-align: center;
   letter-spacing: 0.1em;
+}
+.connecttitle.animated.fadeInDown {
+  animation-duration: 5s;
+  animation-delay: 1s;
+  
 }
                   /* Formulaire de connexion placement */
 .connexion.form {
@@ -140,3 +148,33 @@
   border: 1px solid rgb(70, 177, 240);;
   text-decoration: none;
 }
+/* PAGE INDEX DE TOUT LES PRODUITS */
+.sectionindex {
+  opacity: 0.9;
+  background-image: url('chat.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+}
+.textindex {
+  color: #fff;
+  padding-top: 280px;
+  text-align: center;
+  }
+
+  .textindex h1 {
+
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+
+.textindex h2 {
+  margin-top: 30px;
+}
+
+.textindex p {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
