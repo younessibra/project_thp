@@ -1,5 +1,6 @@
 /* Navbar Boutton */
 .panier a{
+  
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 950px;
@@ -9,6 +10,8 @@
                   /* Titre page de connexion */
 
 .connecttitle {
+  text-transform: uppercase;
+  color: rgb(70, 177, 240);
   margin-bottom: 30px;
   margin-top: 50px;
   margin-right: 50px;
@@ -40,9 +43,24 @@
 }  
                 /* Boutton du formulaire de connection */
 .connectbutton {
-  width: auto;
-  border-radius: 0.3em;
-  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease-in 0s;
+  background: rgb(70, 177, 240);
+}
+
+.connectbutton:hover {
+  background: #fff;
+  color: rgb(70, 177, 240);
+  border: 1px solid rgb(70, 177, 240);;
+  text-decoration: none;
 }
                 /* lien du formulaire de connection */
 .connectliens {
@@ -51,11 +69,11 @@
                 /* Video background */
 .sectionvideo {
   width: 100%;
-  opacity: 0.80;
+  opacity: 0.7;
 }
                 /* Liens mot de passe oublié */
 .connectlink1 {
-  margin-left: 20px;
+ 
   color:black;
 }
 
@@ -64,7 +82,7 @@
 }
                 /* Lien s'inscrire */
 .connectlink2 {
-  margin-left: 170px;
+  margin-left: 20px;
   color:black;
 }
 
@@ -77,20 +95,48 @@
   width: 100%;
   opacity: 0.80;
 }
+
+.mdptitle {
+  color: rgb(70, 177, 240);
+  font-size: 30px;
+}
 .buttonbluereset {
   font-weight: bold;
   text-transform: uppercase;
-  color: rgb(70, 177, 240);
+  color: #fff;
   border: 1px solid white;
   margin-top: 10px;
   margin-left: 40px;
   padding: 10px 30px;
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
   transition: all 0.3s ease-in 0s;
+  background: rgb(70, 177, 240);
 }
 
 .buttonbluereset:hover {
-  background: rgb(70, 177, 240);;
-  color: #fff;
+  background: #fff;
+  color: rgb(70, 177, 240);
+  border: 1px solid rgb(70, 177, 240);;
   text-decoration: none;
+}
+
+.buttonregist {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease-in 0s;
+  background: rgb(70, 177, 240);
+  letter-spacing: 0.1em;
+}
+.buttonregist:hover {
+  background: #fff;
+  color: rgb(70, 177, 240);
+  border: 1px solid rgb(70, 177, 240);;
+  text-decoration: none;
+}
