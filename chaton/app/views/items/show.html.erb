@@ -1,10 +1,14 @@
  <div class="album py-20 bg-light">
     <div class="container">
     <div class="row">
-      
-    <form action="/carts/<%=@item.cart%>" method="put">
+    <% if current_user%>
+
+    <form action="/carts/<%=@item.id%>" method="POST">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <button type="Submit">Ajouter au panier</button>
     </form>
+    
+    <% end %>
 
 
         
