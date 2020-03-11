@@ -8,4 +8,10 @@ class CartsController < ApplicationController
     redirect_to('/')
   end
 
+  def show    
+      @cart = current_user.items      
+  end
+
+  
+
 end

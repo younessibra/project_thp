@@ -1,6 +1,4 @@
- <div class="album py-20 bg-light">
-    <div class="container">
-    <div class="row">
+
     <% if current_user%>
 
     <form action="/carts/<%=@item.id%>" method="POST">
@@ -9,10 +7,13 @@
     </form>
     
     <% end %>
-
-
-        
-        
+    
+    
+    
+  <div class="album py-20 bg-light">
+   <div class="container">
+    <div class="row">
+    
          <div class= "col -md -4">     
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="<%=@item.image_url%>" alt="Card image cap">          
@@ -22,9 +23,8 @@
                   <p class="card-text"><%=@item.price%></p>
               </div>  
           </div>
-         </div>             
-        
-      
+         </div>  
+   
         
     </div>  
   </div>
