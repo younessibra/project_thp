@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :items
   post '/carts/:id', to: 'carts#update'
   resources :carts
+  resources :orders
   devise_for :users
 
   devise_scope :user do  

@@ -208,6 +208,9 @@
   
 }
 
+li {
+  list-style: none;
+}
 #photos {
   margin-top: 50px;
   margin-bottom: 50px;
