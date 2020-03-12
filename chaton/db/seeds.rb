@@ -9,5 +9,5 @@ Item.destroy_all
 
 20.times do |i|
   price = i + 0.99
-  Item.create(title: "Chat#{i}", description: 'chat', price: price, image_url: 'test')
+  Item.create(title: "Chat#{i}", description: 'chat', price: price, image_url: 'https://jardinage.lemonde.fr/images/dossiers/2017-08/chaton-155455.jpg')
 end
