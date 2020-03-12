@@ -2,6 +2,7 @@
   <div class="album py-20 bg-light">
   <div class="container">
   <div class="row">
+
       
         <%@cart.each do |item|%>
          <div class= "col -md -4">     
@@ -14,11 +15,15 @@
               <div class="card-body">
                 <a href="/items/<%=item.id%>" class="card-link"><%=item.price%></a>    
               </div> 
-              <a class="btn btn-primary" href="/carts/:id" role="button">Supprimer</a>         
+              <a class="btn btn-primary" href="/carts/<%=item.id%>/edit" role="button">Supprimer</a>         
           </div>
          </div>             
         <%end%>
 
   </div>
   </div>
+  </div>
+
+  </div> 
+  <a class="btn btn-primary" href="/orders/new" role="button">Passer la commande</a>         
   </div>

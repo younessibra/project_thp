@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-  has_many :cart
-  has_many :items, through: :cart
   belongs_to :user
+  has_many :order_items
+  has_many :items, through: :order_items
 end
