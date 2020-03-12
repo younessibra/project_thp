@@ -4,10 +4,14 @@
     <h2>Achatte la photo de ton choix</h2>
     <p>Vous trouverez ci dessous plusieurs photos de chats que vous pourrez acheter directement depuis notre site.<br>
     Pourquoi des photos de chats me direz vous ? Aucune idée mais ces chatons sont vraiment exceptionnels !</p> 
+    <a href="#photos" class="buttonscroll">Produits</a>
   </div>
-</div>  
-    <div class="album py-20 bg-light">
-      <div class="container">
+</div>
+    <div id="photos">
+      <h3>Choisissez les photos de chatons</h3>
+    </div>  
+    <div class="card album py-20">
+      <div class="container mt-3">
       <div class="row">
       
       
@@ -16,9 +20,9 @@
         
         <% @items.each do |item| %>  
          <div class= "col -md -4">     
-          <div class="card mb-4 box-shadow">
+          <div class="card mb-4 box-shadow border border-secondary">
             <img class="card-img-top" src="<%=item.image_url%>" alt="Card image cap">          
-              <div class="card-body">
+              <div class="card-body ">
                   <h5 class="card-title"><%=item.title%></h5>
                   <p class="card-text"><%=item.description%></p>
               </div>  
@@ -33,6 +37,7 @@
     </div>  
   </div>
 </div>
+
 
 
    
